@@ -102,6 +102,7 @@ body {
   font-weight: 500;
   text-rendering: auto;
   color: #2B3350;
+  scroll-behavior: smooth;
 }
 
 html.--noscroll,
@@ -162,10 +163,6 @@ button {
   -webkit-transition: 0.3s !important;
   -o-transition: 0.3s !important;
   transition: 0.3s !important;
-}
-
-.button-blue:hover {
-  background: #0999D9;
 }
 
 /**
@@ -504,10 +501,6 @@ button {
   transition: 0.3s;
 }
 
-.top-header__button:hover {
-  background: #bcbcbc;
-}
-
 .menu-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,10 +557,6 @@ button {
   color: #FFFFFF;
 }
 
-.menu-header__button:hover {
-  background: #000017;
-}
-
 .menu-header__link {
   font-weight: 500;
   font-size: 1.6rem;
@@ -579,10 +568,6 @@ button {
 
 .menu-header__link:not(:last-of-type) {
   margin-right: 3.2rem;
-}
-
-.menu-header__link:hover {
-  color: #0074D4;
 }
 
 .menu-header__shop {
@@ -678,6 +663,7 @@ button {
   background: #CED2DA;
   opacity: 1;
   border-radius: 5rem;
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
@@ -1809,10 +1795,6 @@ button {
   margin-bottom: 1rem;
 }
 
-.footer__link:hover a {
-  color: #81afff;
-}
-
 .footer__link a {
   font-weight: 500;
   font-size: 1.7rem;
@@ -1832,10 +1814,6 @@ button {
       -ms-flex-align: start;
           align-items: start;
   margin-bottom: 1.7rem;
-}
-
-.footer__item:hover span {
-  color: #81afff;
 }
 
 .footer__item span {
@@ -2132,11 +2110,11 @@ button {
   transition: 0.3s;
 }
 
-.select__item:hover {
-  background-color: #EDEDF2;
-}
-
 @media (min-width: 48em) {
+  .button-blue:hover {
+    background: #0999D9;
+  }
+
   [data-aos][data-aos][data-aos-duration="50"],
   body[data-aos-duration="50"] [data-aos] {
     -webkit-transition-duration: 50ms;
@@ -3742,6 +3720,26 @@ button {
             transform: perspective(2500px) rotateX(0);
   }
 
+  .top-header__button:hover {
+    background: #bcbcbc;
+  }
+
+  .menu-header__button:hover {
+    background: #000017;
+  }
+
+  .menu-header__link:hover {
+    color: #0074D4;
+  }
+
+  .footer__link:hover a {
+    color: #81afff;
+  }
+
+  .footer__item:hover span {
+    color: #81afff;
+  }
+
   .card__wrapper:hover {
     z-index: 10;
     padding: 2.6rem 2.5rem 0;
@@ -3761,6 +3759,10 @@ button {
 
   .select {
     cursor: pointer;
+  }
+
+  .select__item:hover {
+    background-color: #EDEDF2;
   }
 }
 
@@ -3869,7 +3871,7 @@ button {
   }
 
   .top-header__mobile.--open {
-    top: 5.6rem;
+    top: 4.6rem;
   }
 
   .top-header__list {
